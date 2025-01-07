@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <beans>
+        <bean id="dev" class="org.example.Dev" autowire="byType">
+<!--            <constructor-arg ref="laptop-bean" name="laptop"/>-->
+<!--            <property name="laptop" ref="laptop-bean"/>-->
+        </bean>
+        <bean id="laptop-bean" class="org.example.Laptop" primary="true"/>
+        <bean id="desktop-bean" class="org.example.Desktop"/>
+    </beans>
+
+
+</beans>

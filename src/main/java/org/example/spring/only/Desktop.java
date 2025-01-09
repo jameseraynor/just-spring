@@ -1,4 +1,4 @@
-package org.example;
+package org.example.spring.only;
 
 public class Desktop implements Computer {
 
